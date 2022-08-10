@@ -6,13 +6,20 @@ implies. Save the application as NumbersDemo.java.
 b. Modify the NumbersDemo class to accept the values of the two integers from a
 user at the keyboard. Save the file as NumbersDemo2.java.*/
 
+import java.util.Scanner;
 
 public class NumbersDemo 
 {
 	public static void main(String[] args) 
 	{
-		int a = 2;
-		int b = 3;
+		int a;
+		int b;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a >> ");
+		a = input.nextInt();
+		System.out.println("Enter b >> ");
+		b = input.nextInt();
 		
 		System.out.println(displayTwiceTheNumber(a,b));
 		System.out.println(displayNumberPlusFive(a,b));
